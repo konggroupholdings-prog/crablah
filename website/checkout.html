@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout | CrabLah</title>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="checkout">
+  <div id="site-header"></div>
+  <main class="page">
+    <div class="wrap checkout-wrap">
+      <a class="back" href="javascript:history.back()">← Back to gravy</a>
+      <div class="steps"><span class="on">1. Delivery</span><span>2. Pay</span><span>3. Confirm</span></div>
+      <p class="kicker">Tonight</p>
+      <h1>Where should dinner land?</h1>
+      <p class="lede">Last order 2pm Mon–Thu for same-day. Friday–Sunday and kilo: order a day ahead, next-day delivery. Islandwide $15 · 6–8pm. Prices exclude GST.</p>
+
+      <div class="panel">
+        <h2>Your order</h2>
+        <div id="order-lines"></div>
+        <div class="line"><span>Food</span><b id="sum-food">$0</b></div>
+        <div class="line"><span>Delivery</span><b id="sum-del">$0</b></div>
+        <div class="line"><span>Total</span><b id="sum-total">$0</b></div>
+      </div>
+
+      <form class="form" id="checkout-form">
+        <p class="fulfil-note">Islandwide delivery $15 · 6–8pm. The driver will message you.</p>
+        <label for="name">Name</label>
+        <input id="name" required autocomplete="name" />
+        <label for="phone">Mobile</label>
+        <input id="phone" required inputmode="tel" placeholder="9xxx xxxx" />
+        <label for="address">Address</label>
+        <input id="address" required placeholder="Block, street, building" />
+        <label for="unit">Unit</label>
+        <input id="unit" placeholder="#12-34" />
+        <label for="postal">Postal code</label>
+        <input id="postal" required inputmode="numeric" maxlength="6" />
+        <label for="date">Delivery date</label>
+        <input id="date" type="date" required />
+        <p class="when-copy" id="when-copy"></p>
+        <label for="notes">Notes</label>
+        <textarea id="notes" rows="3" placeholder="No chilli padi, extra gravy, leave with guard…"></textarea>
+        <p style="margin-top:22px"><button class="btn btn-ink btn-lg btn-block" type="submit">Make payment</button></p>
+      </form>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/crm.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

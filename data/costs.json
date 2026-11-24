@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-11-23",
+  "notes": "Cook $30 per product includes rent, labour, gravy and shop overhead — do not subtract rent again. Extra crab has no second $30. Pack $2 estimated if not inside the $30. Mix Bag food ~$12.30 (prawn/lala/mussel/sotong 200g, no sausage). Net = sell − crab − cook − pack.",
+  "cookFeePerDish": 30,
+  "cookFeeIncludes": "rent, labour, sauce, kitchen overhead — replaces owning a shop",
+  "cookFeeOnAddons": false,
+  "fulfilment": {
+    "delivery": 15,
+    "note": "Islandwide delivery, charged to the customer. No self-collect."
+  },
+  "crabBuy": [
+    { "grade": "M", "live": "500-600g", "buyLow": 32, "buyHigh": 36, "buyMid": 34, "sold": false },
+    { "grade": "L", "live": "600-700g", "buyLow": 36, "buyHigh": 40, "buyMid": 38 },
+    { "grade": "XL", "live": "700-800g", "buyLow": 44, "buyHigh": 50, "buyMid": 47 },
+    { "grade": "XXL", "live": "800-900g", "buyLow": 56, "buyHigh": 60, "buyMid": 58 },
+    { "grade": "XXXL", "live": "900-1000g", "buyLow": 68, "buyHigh": 68, "buyMid": 68, "plusPlus": true }
+  ],
+  "seafoodPerKg": {
+    "prawns": { "low": 14, "high": 16, "mid": 15 },
+    "lala": { "low": 8, "high": 10, "mid": 9 },
+    "sotong": { "low": 16, "high": 18, "mid": 17 },
+    "mussels": { "low": 4, "high": 6, "mid": 5 }
+  },
+  "estimated": {
+    "packPerDish": 2,
+    "sausagePerKg": 12,
+    "mantouPerPc": 0.35,
+    "sidesHouse": 2.5,
+    "sidesParty": 4.5,
+    "sidesTable": 7,
+    "mixFoodOnly": 12.3,
+    "mixLanded": 44.3,
+    "lobsterEach": 20
+  }
+}

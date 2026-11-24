@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: crablah
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: python serve.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: CRABLAH_HOST
+        value: 0.0.0.0
+      - key: CRABLAH_ADMIN_PASSWORD
+        generateValue: true

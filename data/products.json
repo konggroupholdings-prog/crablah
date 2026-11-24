@@ -1,0 +1,25 @@
+{
+  "brand": "CrabLah",
+  "currency": "SGD",
+  "tagline": "Sri Lankan crab. Singapore gravy. To your doorstep.",
+  "notes": "Cook $30 per product. Extra crabs at addon price (no second cook). Promo 2x = single + addon. Mix Bag: prawn, lala, mussel, sotong 200g each, no sausage. Add-on shellfish 200g. Boston lobster 1 pc $32, buy $20. Kilo and Fri–Sun: next-day.",
+  "sizes": [
+    { "id": "650", "single": 88, "addon": 60, "promo2": 148, "buy": 38 },
+    { "id": "750", "single": 98, "addon": 68, "promo2": 166, "buy": 47 },
+    { "id": "850", "single": 108, "addon": 78, "promo2": 186, "buy": 58 },
+    { "id": "kilo", "single": 118, "addon": 88, "promo2": 206, "buy": 68, "advanceOrder": true }
+  ],
+  "pots": [
+    { "sku": "MIX-01", "name": "Mix Bag", "price": 52 },
+    { "sku": "POT-650", "name": "650 Mix Bag", "price": 108 },
+    { "sku": "POT-KILO", "name": "Mix Kilo Bag", "price": 168 },
+    { "sku": "POT-TABLE", "name": "1650 Mix Bag", "price": 258 }
+  ],
+  "addons": [
+    { "id": "prawn", "unit": "200g", "price": 10 },
+    { "id": "lala", "unit": "200g", "price": 7 },
+    { "id": "mussel", "unit": "200g", "price": 6 },
+    { "id": "sotong", "unit": "200g", "price": 11 },
+    { "id": "lobster", "unit": "1 pc", "price": 32, "buy": 20 }
+  ]
+}

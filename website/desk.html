@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Order desk | CrabLah</title>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/desk.css" />
+</head>
+<body class="desk">
+  <div id="login-view" class="desk-login wrap checkout-wrap">
+    <p class="kicker">Private</p>
+    <h1>Order desk</h1>
+    <p class="lede">Orders land here when someone pays and confirms. Mark PayNow after you see it in the bank.</p>
+    <form class="form panel" id="login-form">
+      <label for="password">Password</label>
+      <input id="password" type="password" autocomplete="current-password" required />
+      <p class="desk-error" id="login-error" hidden>Wrong password.</p>
+      <p style="margin-top:22px"><button class="btn btn-chilli btn-lg btn-block" type="submit">Open desk</button></p>
+    </form>
+    <p class="note">Change the password in <code>data/admin.json</code>. This page is not on the public menu.</p>
+  </div>
+
+  <div id="desk-view" hidden>
+    <header class="desk-bar">
+      <div class="wrap desk-bar-inner">
+        <a class="brand" href="desk.html"><img class="mark" src="img/logo.png" alt="" width="38" height="38">CrabLah desk</a>
+        <div class="desk-bar-actions">
+          <span class="desk-clock" id="desk-clock"></span>
+          <button class="btn btn-ghost" type="button" id="logout">Log out</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page desk-page">
+      <div class="wrap">
+        <div class="desk-stats" id="desk-stats"></div>
+        <div class="desk-toolbar">
+          <input class="desk-search" id="search" type="search" placeholder="Search name, mobile, order no, address" />
+          <div class="chip-row" id="filters">
+            <button type="button" class="chip active" data-filter="today">Today</button>
+            <button type="button" class="chip" data-filter="unpaid">Unpaid</button>
+            <button type="button" class="chip" data-filter="claimed">They say paid</button>
+            <button type="button" class="chip" data-filter="paid">Paid</button>
+            <button type="button" class="chip" data-filter="all">All</button>
+          </div>
+        </div>
+        <div class="desk-layout">
+          <div class="desk-list" id="order-list"></div>
+          <aside class="desk-detail panel" id="order-detail">
+            <p class="lede">Pick an order.</p>
+          </aside>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/crm.js"></script>
+  <script src="js/desk.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+data/admin.json
+data/orders.json
+data/sessions.json
+__pycache__/
+*.pyc
+.env
+

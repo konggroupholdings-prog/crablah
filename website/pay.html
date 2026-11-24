@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pay | CrabLah</title>
+  <link rel="icon" href="img/logo.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="pay">
+  <div id="site-header"></div>
+  <main class="page">
+    <div class="wrap checkout-wrap">
+      <a class="back" href="checkout.html">← Back to delivery</a>
+      <div class="steps"><span>1. Delivery</span><span class="on">2. Pay</span><span>3. Confirm</span></div>
+
+      <div class="pay-card">
+        <h1>Scan this QR</h1>
+        <p class="pay-amount" id="pay-amount">$0</p>
+        <img class="paynow-qr" src="img/paynow-qr.jpg" alt="PayNow QR" width="280" height="280" />
+        <p class="pay-hint">Pay this amount. Remarks: <b id="pay-ref"></b></p>
+        <a class="btn btn-chilli btn-lg btn-block" href="confirm.html">Payment done</a>
+      </div>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
